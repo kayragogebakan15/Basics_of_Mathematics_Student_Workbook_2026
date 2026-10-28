@@ -20,7 +20,33 @@ F^3=\begin{pmatrix}3&2\\2&1\end{pmatrix},\quad
 F^4=\begin{pmatrix}5&3\\3&2\end{pmatrix},\quad
 F^5=\begin{pmatrix}8&5\\5&3\end{pmatrix}.
 \]
-The Fibonacci numbers appear in these matrices. More precisely, for \(n\geq1\),
+The Fibonacci numbers appear in these matrices. The pattern can be derived by multiplying one more copy of \(F\). For example,
+\[
+F^2=F F=
+\begin{pmatrix}1&1\\1&0\end{pmatrix}
+\begin{pmatrix}1&1\\1&0\end{pmatrix}
+=\begin{pmatrix}2&1\\1&1\end{pmatrix}.
+\]
+The formula holds for \(n=1\), because
+\[
+F=\begin{pmatrix}1&1\\1&0\end{pmatrix}
+=\begin{pmatrix}f_2&f_1\\f_1&f_0\end{pmatrix}.
+\]
+Now assume it holds for some \(n\geq1\):
+\[
+F^n=\begin{pmatrix}f_{n+1}&f_n\\f_n&f_{n-1}\end{pmatrix}.
+\]
+Then
+\[
+\begin{aligned}
+F^{n+1}&=F^nF\\
+&=\begin{pmatrix}f_{n+1}&f_n\\f_n&f_{n-1}\end{pmatrix}
+\begin{pmatrix}1&1\\1&0\end{pmatrix}\\
+&=\begin{pmatrix}f_{n+1}+f_n&f_{n+1}\\f_n+f_{n-1}&f_n\end{pmatrix}\\
+&=\begin{pmatrix}f_{n+2}&f_{n+1}\\f_{n+1}&f_n\end{pmatrix},
+\end{aligned}
+\]
+using the Fibonacci recurrence. This explains why the formula continues to hold. Thus, for \(n\geq1\),
 \[
 F^n=\begin{pmatrix}f_{n+1}&f_n\\f_n&f_{n-1}\end{pmatrix}.
 \]
@@ -47,6 +73,13 @@ and the same indexing gives the displayed values for \(F^3,F^4,F^5\). Direct mul
 ## Final Answer
 
 \[
-\boxed{F^2=\begin{pmatrix}2&1\\1&1\end{pmatrix},F^3=\begin{pmatrix}3&2\\2&1\end{pmatrix},F^4=\begin{pmatrix}5&3\\3&2\end{pmatrix},F^5=\begin{pmatrix}8&5\\5&3\end{pmatrix}}
+\[
+\boxed{F^2=\begin{pmatrix}2&1\\1&1\end{pmatrix}},\qquad
+\boxed{F^3=\begin{pmatrix}3&2\\2&1\end{pmatrix}},
+\]
+\[
+\boxed{F^4=\begin{pmatrix}5&3\\3&2\end{pmatrix}},\qquad
+\boxed{F^5=\begin{pmatrix}8&5\\5&3\end{pmatrix}}.
+\]
 \]
 and \(\boxed{F(a,b)^T=(a+b,a)^T}\).

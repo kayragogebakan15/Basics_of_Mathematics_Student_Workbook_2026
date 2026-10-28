@@ -21,7 +21,7 @@ The size of a matrix is written as number of rows \(\times\) number of columns. 
    - \(a_{12}=-1\),
    - \(a_{23}=5\),
    - \(b_{21}=-2\),
-   - \(b_{32}=4\).
+   - \(b_{32}=1\).
 4. The second row of \(A\) is the row vector \((0,4,5)\).
 5. The first column of \(B\) is the column vector
 \[
@@ -38,5 +38,5 @@ The indices match the row and column positions in the displayed matrices. The nu
 \boxed{\operatorname{size}(A)=2\times3,\quad \operatorname{size}(B)=3\times2}
 \]
 \[
-\boxed{a_{12}=-1,\ a_{23}=5,\ b_{21}=-2,\ b_{32}=4}
+\boxed{a_{12}=-1,\ a_{23}=5,\ b_{21}=-2,\ b_{32}=1}
 \]

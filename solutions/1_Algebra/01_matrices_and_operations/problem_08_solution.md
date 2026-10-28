@@ -49,6 +49,15 @@ Inverse operation: interchange \(R_2\) and \(R_3\) again.
 
 Each operation changes only the specified row or row positions. Reversing Step 1 restores row 2 because \((R_2-2R_1)+2R_1=R_2\); the same cancellation applies to Step 2. A row swap performed twice restores the original row order.
 
+To reverse the **entire sequence**, undo the operations in reverse order: first swap \(R_2\) and \(R_3\) again; then apply \(R_3\leftarrow R_3-R_1\); finally apply \(R_2\leftarrow R_2+2R_1\). This order matters because each inverse must act on the matrix produced by the later steps.
+
+## Reverse the full sequence
+
+Starting from \(A_3\), undo Step 3, then Step 2, then Step 1. The inverse operations are therefore applied in the order
+\[
+R_2\leftrightarrow R_3,\qquad R_3\leftarrow R_3-R_1,\qquad R_2\leftarrow R_2+2R_1.
+\]
+
 ## Final Answer
 
 \[

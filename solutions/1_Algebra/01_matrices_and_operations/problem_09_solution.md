@@ -50,7 +50,7 @@ RSx=\begin{pmatrix}-2\\2\end{pmatrix}
 \ne
 \begin{pmatrix}-4\\1\end{pmatrix}=SRx.
 \]
-Geometrically, scaling the horizontal coordinate before rotation affects both resulting coordinates after the rotation; rotating first changes which coordinate is then enlarged by the nonuniform scaling.
+Geometrically, \(R(x,y)^T=(-y,x)^T\), so the rotation swaps the roles of the horizontal and vertical coordinates (with a sign change). In \(RSx\), scaling the original horizontal coordinate first changes the value that becomes the vertical coordinate after rotation. In \(SRx\), rotation happens first, and \(S\) then doubles the new horizontal coordinate while leaving the vertical coordinate unchanged. These are different operations, so their results differ.
 
 ## Final Answer
 
