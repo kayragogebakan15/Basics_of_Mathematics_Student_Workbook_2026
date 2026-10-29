@@ -26,7 +26,16 @@ AB=\begin{pmatrix}
 \end{pmatrix}
 =\begin{pmatrix}5&2\\1&4\end{pmatrix}.
 \]
-Then,
+Then calculate each entry of \((AB)C\) as a row-column dot product:
+\[
+\begin{aligned}
+((AB)C)_{11}&=5\cdot2+2\cdot0=10,\\
+((AB)C)_{12}&=5\cdot1+2\cdot(-1)=3,\\
+((AB)C)_{21}&=1\cdot2+4\cdot0=2,\\
+((AB)C)_{22}&=1\cdot1+4\cdot(-1)=-3.
+\end{aligned}
+\]
+Therefore,
 \[
 (AB)C=
 \begin{pmatrix}5&2\\1&4\end{pmatrix}
@@ -40,10 +49,39 @@ First,
 \[
 BC=
 \begin{pmatrix}1&0\\2&1\\-1&3\end{pmatrix}
-\begin{pmatrix}2&1\\0&-1\end{pmatrix}
-=\begin{pmatrix}2&1\\4&1\\-2&-4\end{pmatrix}.
+\begin{pmatrix}2&1\\0&-1\end{pmatrix}.
+\]
+Calculate its six entries:
+\[
+\begin{aligned}
+(BC)_{11}&=1\cdot2+0\cdot0=2, &
+(BC)_{12}&=1\cdot1+0\cdot(-1)=1,\\
+(BC)_{21}&=2\cdot2+1\cdot0=4, &
+(BC)_{22}&=2\cdot1+1\cdot(-1)=1,\\
+(BC)_{31}&=(-1)\cdot2+3\cdot0=-2, &
+(BC)_{32}&=(-1)\cdot1+3\cdot(-1)=-4.
+\end{aligned}
+\]
+Thus,
+\[
+BC=\begin{pmatrix}2&1\\4&1\\-2&-4\end{pmatrix}.
 \]
 Then,
+\[
+A(BC)=
+\begin{pmatrix}1&2&0\\0&1&1\end{pmatrix}
+\begin{pmatrix}2&1\\4&1\\-2&-4\end{pmatrix}.
+\]
+Again, calculate each entry by taking a row of \(A\) dotted with a column of \(BC\):
+\[
+\begin{aligned}
+(A(BC))_{11}&=1\cdot2+2\cdot4+0\cdot(-2)=10,\\
+(A(BC))_{12}&=1\cdot1+2\cdot1+0\cdot(-4)=3,\\
+(A(BC))_{21}&=0\cdot2+1\cdot4+1\cdot(-2)=2,\\
+(A(BC))_{22}&=0\cdot1+1\cdot1+1\cdot(-4)=-3.
+\end{aligned}
+\]
+Therefore,
 \[
 A(BC)=
 \begin{pmatrix}1&2&0\\0&1&1\end{pmatrix}

@@ -15,7 +15,7 @@ If \(B=[b_1\ b_2\ \cdots\ b_n]\), then
 \[
 AB=[Ab_1\ Ab_2\ \cdots\ Ab_n].
 \]
-Each column of the product is obtained by multiplying \(A\) by the corresponding column of \(B\).
+Each column of the product is obtained by multiplying \(A\) by the corresponding column of \(B\). In detail, the entry in row \(i\), column \(j\) of \(AB\) is the dot product of row \(i\) of \(A\) with column \(j\) of \(B\). This is exactly the \(i\)-th entry of \(Ab_j\). Since this holds for every row \(i\), the entire \(j\)-th column of \(AB\) equals \(Ab_j\`.
 
 ## 3. Detailed Step-by-Step Solution
 

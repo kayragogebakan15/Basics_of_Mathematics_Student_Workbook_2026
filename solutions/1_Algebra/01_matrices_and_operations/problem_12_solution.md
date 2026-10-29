@@ -15,12 +15,38 @@ A matrix power is repeated multiplication. Mathematical induction proves a gener
 ## 3. Detailed Step-by-Step Solution
 
 \[
-A^2=AA=\begin{pmatrix}1&2\\0&1\end{pmatrix}.
+A^2=AA=
+\begin{pmatrix}1&1\\0&1\end{pmatrix}
+\begin{pmatrix}1&1\\0&1\end{pmatrix}
+=\begin{pmatrix}
+1\cdot1+1\cdot0&1\cdot1+1\cdot1\\
+0\cdot1+1\cdot0&0\cdot1+1\cdot1
+\end{pmatrix}
+=\begin{pmatrix}1&2\\0&1\end{pmatrix}.
 \]
-Then
+The upper-right entry is \(1\cdot1+1\cdot1=2\). Multiplying once more,
 \[
-A^3=A^2A=\begin{pmatrix}1&3\\0&1\end{pmatrix},\qquad
-A^4=A^3A=\begin{pmatrix}1&4\\0&1\end{pmatrix}.
+A^3=A^2A=
+\begin{pmatrix}1&2\\0&1\end{pmatrix}
+\begin{pmatrix}1&1\\0&1\end{pmatrix}
+=\begin{pmatrix}
+1\cdot1+2\cdot0&1\cdot1+2\cdot1\\
+0\cdot1+1\cdot0&0\cdot1+1\cdot1
+\end{pmatrix}
+=\begin{pmatrix}1&3\\0&1\end{pmatrix}.
+\]
+Its upper-right entry is \(1\cdot1+2\cdot1=3\). Similarly,
+\[
+A^4=A^3A=
+\begin{pmatrix}1&3\\0&1\end{pmatrix}
+\begin{pmatrix}1&1\\0&1\end{pmatrix}
+=\begin{pmatrix}
+1\cdot1+3\cdot0&1\cdot1+3\cdot1\\
+0\cdot1+1\cdot0&0\cdot1+1\cdot1
+\end{pmatrix}
+=\begin{pmatrix}1&4\\0&1\end{pmatrix}.
+\]
+Its upper-right entry is \(1\cdot1+3\cdot1=4.
 \]
 The upper-right entry equals the exponent, suggesting
 \[
@@ -40,12 +66,17 @@ so the formula holds.
 \[
 A^n=\begin{pmatrix}1&n\\0&1\end{pmatrix}.
 \]
-Multiplying by \(A\),
+Multiplying by \(A\) and calculating each entry by the row-by-column rule,
 \[
-A^{n+1}=A^nA
-=\begin{pmatrix}1&n\\0&1\end{pmatrix}
-\begin{pmatrix}1&1\\0&1\end{pmatrix}
-=\begin{pmatrix}1&n+1\\0&1\end{pmatrix}.
+\begin{aligned}
+A^{n+1}&=A^nA\\
+&=\begin{pmatrix}1&n\\0&1\end{pmatrix}
+\begin{pmatrix}1&1\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}
+1\cdot1+n\cdot0&1\cdot1+n\cdot1\\
+0\cdot1+1\cdot0&0\cdot1+1\cdot1
+\end{pmatrix}\\
+&=\begin{pmatrix}1&n+1\\0&1\end{pmatrix}.
 \]
 This is exactly the proposed formula with \(n+1\) in place of \(n\).
 

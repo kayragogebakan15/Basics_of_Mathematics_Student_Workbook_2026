@@ -25,17 +25,34 @@ AI=IA=A=\begin{pmatrix}2&1\\0&2\end{pmatrix},\qquad
 A+0=A=\begin{pmatrix}2&1\\0&2\end{pmatrix}.
 \]
 
-For the square,
+For the square, each entry is the dot product of a row of \(A\) with a column of \(A\):
+\[
+\begin{aligned}
+(A^2)_{11}&=2\cdot2+1\cdot0=4,\\
+(A^2)_{12}&=2\cdot1+1\cdot2=4,\\
+(A^2)_{21}&=0\cdot2+2\cdot0=0,\\
+(A^2)_{22}&=0\cdot1+2\cdot2=4.
+\end{aligned}
+\]
+Therefore,
 \[
 A^2=\begin{pmatrix}2&1\\0&2\end{pmatrix}
 \begin{pmatrix}2&1\\0&2\end{pmatrix}
 =\boxed{\begin{pmatrix}4&4\\0&4\end{pmatrix}}.
 \]
 
-For the cube,
+For the cube, use \(A^3=A^2A\) and apply the same row-by-column rule:
 \[
-A^3=A^2A
-=\begin{pmatrix}4&4\\0&4\end{pmatrix}
+\begin{aligned}
+(A^3)_{11}&=4\cdot2+4\cdot0=8,\\
+(A^3)_{12}&=4\cdot1+4\cdot2=12,\\
+(A^3)_{21}&=0\cdot2+4\cdot0=0,\\
+(A^3)_{22}&=0\cdot1+4\cdot2=8.
+\end{aligned}
+\]
+Thus,
+\[
+A^3=\begin{pmatrix}4&4\\0&4\end{pmatrix}
 \begin{pmatrix}2&1\\0&2\end{pmatrix}
 =\boxed{\begin{pmatrix}8&12\\0&8\end{pmatrix}}.
 \]
