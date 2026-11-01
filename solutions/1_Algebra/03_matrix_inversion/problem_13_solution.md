@@ -9,12 +9,19 @@ describe nonuniform scaling and shear. For $T=HS$, find $T^{-1}$ in two ways: (1
 For invertible matrices, $(AB)^{-1}=B^{-1}A^{-1}$. The order reverses because the last transformation applied must be undone first.
 
 ## 3. Detailed Step-by-Step Solution
-**Method 1: calculate $T$ first.**
-$$
-T=HS=\begin{pmatrix}1&1\\0&1\end{pmatrix}
-\begin{pmatrix}2&0\\0&1\end{pmatrix}
-=\begin{pmatrix}2&1\\0&1\end{pmatrix}.
-$$
+**Method 1: calculate $T$ first.** Use row-by-column multiplication:
+$
+\begin{aligned}
+T=HS
+&=\begin{pmatrix}1&1\\0&1\end{pmatrix}
+\begin{pmatrix}2&0\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}
+1\cdot2+1\cdot0&1\cdot0+1\cdot1\\
+0\cdot2+1\cdot0&0\cdot0+1\cdot1
+\end{pmatrix}\\
+&=\begin{pmatrix}2&1\\0&1\end{pmatrix}.
+\end{aligned}
+$
 Its determinant is $2$, so
 $$
 T^{-1}=\frac12\begin{pmatrix}1&-1\\0&2\end{pmatrix}
