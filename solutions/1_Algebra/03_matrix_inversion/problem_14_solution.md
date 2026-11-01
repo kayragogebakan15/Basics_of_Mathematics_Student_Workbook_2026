@@ -13,12 +13,20 @@ Thus $A$ itself is both a left and right inverse of $A$. By uniqueness of the in
 
 Choose the matrix
 $$A=\begin{pmatrix}0&1\\1&0\end{pmatrix}.$$
-It is not equal to $I$ or $-I$. Its square is
-$$
-A^2=\begin{pmatrix}0&1\\1&0\end{pmatrix}
-\begin{pmatrix}0&1\\1&0\end{pmatrix}
-=\begin{pmatrix}1&0\\0&1\end{pmatrix}=I.
-$$
+It is not equal to $I$ or $-I$. Calculate its square by the row-by-column rule:
+$
+\begin{aligned}
+A^2
+&=\begin{pmatrix}0&1\\1&0\end{pmatrix}
+\begin{pmatrix}0&1\\1&0\end{pmatrix}\\
+&=\begin{pmatrix}
+0\cdot0+1\cdot1&0\cdot1+1\cdot0\\
+1\cdot0+0\cdot1&1\cdot1+0\cdot0
+\end{pmatrix}\\
+&=\begin{pmatrix}1&0\\0&1\end{pmatrix}=I.
+\end{aligned}
+$
+The four entries are $1,0,0,1$, respectively, verifying the identity matrix.
 
 ## 4. Verification and Consistency Checks
 The multiplication confirms the condition exactly. Therefore this example is its own inverse, as the general argument predicts.
