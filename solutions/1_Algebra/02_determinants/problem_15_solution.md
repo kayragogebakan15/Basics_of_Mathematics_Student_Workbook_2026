@@ -27,13 +27,15 @@ $\det(A^T)=\det A=-2.$
 Since $B$ is invertible and $\det B=3$,
 $\det(B^{-1})=\frac{1}{\det B}=\frac13.$
 Substitute:
-$$
+$
+\begin{aligned}
 \det(B^{-1}A^TB)
 &=\frac13\cdot(-2)\cdot3\\
 &=(-2)\left(\frac13\cdot3\right)\\
 &=(-2)\cdot1\\
 &=-2.
-$$
+\end{aligned}
+$
 The factors involving $B$ cancel because $\det(B^{-1})\det(B)=\frac13\cdot3=1$.
 
 ## 4. Verification and Consistency Checks
