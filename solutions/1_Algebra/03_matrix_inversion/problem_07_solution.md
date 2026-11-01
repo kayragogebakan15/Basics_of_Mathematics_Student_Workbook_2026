@@ -20,16 +20,24 @@ $$
 (AB)^{-1}=\frac16\begin{pmatrix}3&-3\\0&2\end{pmatrix}
 =\begin{pmatrix}\frac12&-\frac12\\0&\frac13\end{pmatrix}.
 $$
-Separately,
-$$A^{-1}=\begin{pmatrix}1&-1\\0&1\end{pmatrix},\qquad
-B^{-1}=\begin{pmatrix}\frac12&0\\0&\frac13\end{pmatrix}.$$
-Then
-$$
+For $A$, $\det A=1\cdot1-1\cdot0=1$. The $2\times2$ inverse formula gives
+$A^{-1}=\frac11\begin{pmatrix}1&-1\\0&1\end{pmatrix}
+=\begin{pmatrix}1&-1\\0&1\end{pmatrix}.$
+For diagonal $B$, take reciprocals of its nonzero diagonal entries:
+$B^{-1}=\begin{pmatrix}\frac12&0\\0&\frac13\end{pmatrix}.$
+Now calculate $B^{-1}A^{-1}$ entry by entry:
+$
+\begin{aligned}
 B^{-1}A^{-1}
-=\begin{pmatrix}\frac12&0\\0&\frac13\end{pmatrix}
-\begin{pmatrix}1&-1\\0&1\end{pmatrix}
+&=\begin{pmatrix}\frac12&0\\0&\frac13\end{pmatrix}
+\begin{pmatrix}1&-1\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}
+\frac12\cdot1+0\cdot0&\frac12\cdot(-1)+0\cdot1\\
+0\cdot1+\frac13\cdot0&0\cdot(-1)+\frac13\cdot1
+\end{pmatrix}
 =\begin{pmatrix}\frac12&-\frac12\\0&\frac13\end{pmatrix}.
-$$
+\end{aligned}
+$
 
 ## 4. Verification and Consistency Checks
 The two calculations give identical matrices. The property can also be checked from the definition:
