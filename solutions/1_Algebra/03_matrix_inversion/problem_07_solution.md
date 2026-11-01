@@ -11,10 +11,19 @@ $$(AB)^{-1}=B^{-1}A^{-1}.$$
 The order is reversed because the operation performed last must be undone first.
 
 ## 3. Detailed Step-by-Step Solution
-First calculate the product:
-$$AB=\begin{pmatrix}1&1\\0&1\end{pmatrix}
-\begin{pmatrix}2&0\\0&3\end{pmatrix}
-=\begin{pmatrix}2&3\\0&3\end{pmatrix}.$$
+First calculate $AB$ using row-by-column products:
+$
+\begin{aligned}
+AB
+&=\begin{pmatrix}1&1\\0&1\end{pmatrix}
+\begin{pmatrix}2&0\\0&3\end{pmatrix}\\
+&=\begin{pmatrix}
+1\cdot2+1\cdot0&1\cdot0+1\cdot3\\
+0\cdot2+1\cdot0&0\cdot0+1\cdot3
+\end{pmatrix}\\
+&=\begin{pmatrix}2&3\\0&3\end{pmatrix}.
+\end{aligned}
+$
 Its determinant is $6$, so it is invertible. Using the $2\times2$ formula,
 $$
 (AB)^{-1}=\frac16\begin{pmatrix}3&-3\\0&2\end{pmatrix}
