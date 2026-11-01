@@ -11,9 +11,12 @@ $$A^{-1}(AX)=A^{-1}B\quad\Longrightarrow\quad X=A^{-1}B.$$
 Matrix multiplication is not generally commutative, so the side matters.
 
 ## 3. Detailed Step-by-Step Solution
-The inverse of the upper triangular matrix is
-$$A^{-1}=\begin{pmatrix}1&-2\\0&1\end{pmatrix},$$
-as direct multiplication with $A$ gives $I$. Therefore,
+The determinant is $\det A=1\cdot1-2\cdot0=1$. By the $2\times2$ inverse formula,
+$A^{-1}=\frac11\begin{pmatrix}1&-2\\0&1\end{pmatrix}
+=\begin{pmatrix}1&-2\\0&1\end{pmatrix}.$
+Because $A$ multiplies $X$ on the left, multiply $AX=B$ on the left by $A^{-1}$:
+$A^{-1}(AX)=(A^{-1}A)X=IX=X=A^{-1}B.$
+This explains the side on which the inverse must be applied. Therefore,
 $$
 X=A^{-1}B
 =\begin{pmatrix}1&-2\\0&1\end{pmatrix}
