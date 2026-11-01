@@ -60,14 +60,19 @@ $$
 The right block is the inverse.
 
 ## 4. Verification and Consistency Checks
-Multiply the original matrix by twice the proposed inverse:
-$$
-2AA^{-1}=
-\begin{pmatrix}1&1&0\\0&1&1\\1&0&1\end{pmatrix}
-\begin{pmatrix}1&-1&1\\1&1&-1\\-1&1&1\end{pmatrix}
-=\begin{pmatrix}2&0&0\\0&2&0\\0&0&2\end{pmatrix}.
-$$
-Dividing by 2 gives $AA^{-1}=I_3$. This verifies all nine entries at once.
+Let
+$M=\begin{pmatrix}1&-1&1\\1&1&-1\\-1&1&1\end{pmatrix}.$
+Use the row-by-column rule to calculate $AM$:
+$
+\begin{aligned}
+\text{Row 1: }&(1\cdot1+1\cdot1+0\cdot(-1),\;1\cdot(-1)+1\cdot1+0\cdot1,\;1\cdot1+1\cdot(-1)+0\cdot1)=(2,0,0),\\
+\text{Row 2: }&(0\cdot1+1\cdot1+1\cdot(-1),\;0\cdot(-1)+1\cdot1+1\cdot1,\;0\cdot1+1\cdot(-1)+1\cdot1)=(0,2,0),\\
+\text{Row 3: }&(1\cdot1+0\cdot1+1\cdot(-1),\;1\cdot(-1)+0\cdot1+1\cdot1,\;1\cdot1+0\cdot(-1)+1\cdot1)=(0,0,2).
+\end{aligned}
+$
+Thus
+$AM=\begin{pmatrix}2&0&0\\0&2&0\\0&0&2\end{pmatrix}=2I_3.$
+Since $A^{-1}=\frac12M$, it follows that $AA^{-1}=A(\frac12M)=I_3$. This verifies all nine entries explicitly.
 
 ## 5. Final Answer
 $$\boxed{A^{-1}=\frac12\begin{pmatrix}1&-1&1\\1&1&-1\\-1&1&1\end{pmatrix}.}$$
