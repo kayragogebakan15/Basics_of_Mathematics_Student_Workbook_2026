@@ -15,9 +15,13 @@ The inverse is applied on the left because $A$ multiplies $x$ on the left. We fi
 
 ## 3. Detailed Step-by-Step Solution
 The determinant is
-$$\det(A)=2\cdot3-1\cdot1=5\ne0.$$
-Therefore,
-$$A^{-1}=\frac15\begin{pmatrix}3&-1\\-1&2\end{pmatrix}.$$
+$\det(A)=2\cdot3-1\cdot1=5\ne0.$
+Applying the stated inverse formula to $a=2$, $b=1$, $c=1$, and $d=3$ gives
+$
+A^{-1}=\frac1{2\cdot3-1\cdot1}
+\begin{pmatrix}3&-1\\-1&2\end{pmatrix}
+=\frac15\begin{pmatrix}3&-1\\-1&2\end{pmatrix}.
+$
 Now calculate:
 $$
 x=A^{-1}b
