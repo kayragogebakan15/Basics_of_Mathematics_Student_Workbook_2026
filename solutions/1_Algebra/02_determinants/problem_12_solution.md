@@ -25,22 +25,24 @@ A_1(t)=\begin{pmatrix}1&2&3\\0&0&t-6\\0&1&1\end{pmatrix},
 $$
 
 Expand along the second row, which has two zeros. The only nonzero possible term is the entry $t-6$ in position $(2,3)$:
-$$
+$
 \begin{aligned}
-\det A(t)\\
+\det A(t)
 &=\det A_1(t)\\
 &=(t-6)(-1)^{2+3}
-\begin{vmatrix}1&2
+\begin{vmatrix}
+1&2\\
+0&1
+\end{vmatrix}\\
+&=-(t-6)(1\cdot1-2\cdot0)\\
+&=-(t-6)\\
+&=6-t.
 \end{aligned}
-$$  
-$0&1\end{vmatrix}$  
-$=-(t-6)(1\cdot1-2\cdot0)$  
-$=-(t-6)$  
-$=6-t.$
+$
 The matrix is not invertible when
 $6-t=0\quad\Longrightarrow\quad t=6.$
 
-For $t=6$, the transformed second row is $(0,0,0)$. This means the transformed rows are linearly dependent, which explains why the determinant is zero.
+For $t=6$, the transformed second row is $(0,0,0)$. In the original matrix, the second row $(2,4,6)$ is exactly twice the first row $(1,2,3)$. Thus the rows are linearly dependent, which explains why the determinant is zero.
 
 ## 4. Verification and Consistency Checks
 
