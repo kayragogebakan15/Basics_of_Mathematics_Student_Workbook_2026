@@ -6,7 +6,7 @@ $$\begin{cases}x+2y-z=0,\\2x+4y-2z=0,\\x-y+2z=0.\end{cases}$$
 Give all solutions in parametric form and explain why $(0,0,0)$ always satisfies a homogeneous system.
 
 ## 2. Method and Key Formula
-A homogeneous system has the form $Ax=0$. The zero vector always satisfies it because $A0=0$. Use elimination to find any additional solutions and express free variables with parameters.
+A homogeneous system has the form $Ax=0$. The zero vector always satisfies it because $A0=0$: when every unknown is zero, every coefficient-times-unknown term is zero, so each left-hand side is a sum of zeros and therefore equals the homogeneous right-hand side, zero. Use elimination to find any additional solutions and express free variables with parameters.
 
 ## 3. Detailed Step-by-Step Solution
 The augmented matrix is
