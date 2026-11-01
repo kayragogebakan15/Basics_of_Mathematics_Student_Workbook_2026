@@ -6,9 +6,12 @@ $$A=\begin{pmatrix}2&1\\1&3\end{pmatrix},\qquad b=\begin{pmatrix}5\\7\end{pmatri
 using $x=A^{-1}b$. Then substitute the resulting vector back into the equation and check the result.
 
 ## 2. Method and Key Formula
-If $A$ is invertible, multiply $Ax=b$ on the left by $A^{-1}$:
-$$A^{-1}Ax=A^{-1}b\quad\Longrightarrow\quad x=A^{-1}b.$$
-We first find the inverse and then multiply it by $b$.
+For a $2\times2$ matrix,
+$A=\begin{pmatrix}a&b\\c&d\end{pmatrix},\qquad
+A^{-1}=\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix},$
+provided $ad-bc\ne0$. If $Ax=b$, left-multiply by $A^{-1}$:
+$A^{-1}(Ax)=(A^{-1}A)x=Ix=x=A^{-1}b.$
+The inverse is applied on the left because $A$ multiplies $x$ on the left. We first use the formula to construct $A^{-1}$ and then calculate $A^{-1}b$.
 
 ## 3. Detailed Step-by-Step Solution
 The determinant is
