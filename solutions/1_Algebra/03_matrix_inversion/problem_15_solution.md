@@ -6,7 +6,10 @@ $$A=\begin{pmatrix}2&1\\1&3\end{pmatrix},\qquad b=\begin{pmatrix}7\\8\end{pmatri
 solve $Ax=b$ in two ways: (1) using $A^{-1}b$, and (2) using Gaussian elimination. Compare both solutions, the number of essential steps, and state which method was simpler in this example.
 
 ## 2. Method and Key Formula
-The inverse method uses $x=A^{-1}b$ when $A$ is invertible. Gaussian elimination applies elementary row operations to the augmented matrix $[A\mid b]$ until the unknowns can be read from an equivalent triangular or reduced system.
+For a $2\times2$ matrix, the inverse rule is
+$\begin{pmatrix}a&b\\c&d\end{pmatrix}^{-1}
+=\frac1{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix},\quad ad-bc\ne0.$
+The inverse method calculates the determinant, constructs $A^{-1}$ using this formula, then computes $x=A^{-1}b$. Gaussian elimination instead works on $[A\mid b]$ by row swap, elimination below the first pivot, pivot scaling, and elimination above the second pivot.
 
 ## 3. Detailed Step-by-Step Solution
 **Method 1: inverse matrix.** First,
@@ -43,7 +46,11 @@ Thus the two variables are determined.
 Substitute into the original equations:
 $$2\left(\frac{13}{5}\right)+\frac95=\frac{35}{5}=7,$$
 $$\frac{13}{5}+3\left(\frac95\right)=\frac{40}{5}=8.$$
-Both methods give the same vector and both original equations hold. In this small example, Gaussian elimination is simpler because it avoids calculating and displaying the full inverse. The inverse method is useful when the inverse is already available or reused for several right-hand sides.
+Both methods give the same vector and both original equations hold. The essential steps are:
+- **Inverse method:** determinant calculation, inverse construction by the $2\times2$ formula, then matrix-vector multiplication.
+- **Gaussian elimination:** row swap, elimination below the first pivot, scaling the second pivot row, then elimination above that pivot.
+
+For this small system, Gaussian elimination is simpler because it finds the solution directly without constructing all four entries of the inverse. The inverse method is useful when the inverse is already available or reused for several right-hand sides.
 
 ## 5. Final Answer
 $$\boxed{x=\begin{pmatrix}\frac{13}{5}\\\frac95\end{pmatrix}.}$$
