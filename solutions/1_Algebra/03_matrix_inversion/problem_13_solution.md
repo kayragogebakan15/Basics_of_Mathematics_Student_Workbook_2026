@@ -21,25 +21,39 @@ T^{-1}=\frac12\begin{pmatrix}1&-1\\0&2\end{pmatrix}
 =\begin{pmatrix}\frac12&-\frac12\\0&1\end{pmatrix}.
 $$
 **Method 2: reverse the factors.**
-$$
-S^{-1}=\begin{pmatrix}\frac12&0\\0&1\end{pmatrix},\qquad
-H^{-1}=\begin{pmatrix}1&-1\\0&1\end{pmatrix}.
-$$
-Therefore,
-$$
+Since $S$ is diagonal, its inverse is obtained by taking reciprocals:
+$S^{-1}=\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}.$
+For $H$, $\det H=1\cdot1-1\cdot0=1$. The $2\times2$ inverse formula gives
+$H^{-1}=\frac11\begin{pmatrix}1&-1\\0&1\end{pmatrix}
+=\begin{pmatrix}1&-1\\0&1\end{pmatrix}.$
+Calculate the correct order:
+$
+\begin{aligned}
 S^{-1}H^{-1}
-=\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}
-\begin{pmatrix}1&-1\\0&1\end{pmatrix}
+&=\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}
+\begin{pmatrix}1&-1\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}
+\frac12\cdot1+0\cdot0&\frac12\cdot(-1)+0\cdot1\\
+0\cdot1+1\cdot0&0\cdot(-1)+1\cdot1
+\end{pmatrix}
 =\begin{pmatrix}\frac12&-\frac12\\0&1\end{pmatrix}.
-$$
+\end{aligned}
+$
 The incorrect order gives
-$$
+$
+\begin{aligned}
 H^{-1}S^{-1}
-=\begin{pmatrix}1&-1\\0&1\end{pmatrix}
-\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}
-=\begin{pmatrix}\frac12&-1\\0&1\end{pmatrix},
-$$
-which is different.
+&=\begin{pmatrix}1&-1\\0&1\end{pmatrix}
+\begin{pmatrix}\frac12&0\\0&1\end{pmatrix}\\
+&=\begin{pmatrix}
+1\cdot\frac12+(-1)\cdot0&1\cdot0+(-1)\cdot1\\
+0\cdot\frac12+1\cdot0&0\cdot0+1\cdot1
+\end{pmatrix}
+=\begin{pmatrix}\frac12&-1\\0&1\end{pmatrix}.
+\end{aligned}
+$
+The order reverses because $HS$ applies $S$ first and $H$ second. To undo it, undo $H$ first, then $S$, giving $S^{-1}H^{-1}$. Indeed,
+$S^{-1}H^{-1}HS=S^{-1}(H^{-1}H)S=S^{-1}IS=I.$
 
 ## 4. Verification and Consistency Checks
 Multiplying $T$ by the proposed inverse:
