@@ -9,7 +9,7 @@ Given $u=(1,1,0)$ and $v=(1,0,1)$:
 ## 2. Method and Key Formula
 For nonzero vectors, the angle $\theta\in[0,\pi]$ satisfies
 $$\cos\theta=\frac{u\cdot v}{\|u\|\,\|v\|}.$$
-A positive dot product means an acute angle, a zero dot product means a right angle, and a negative dot product means an obtuse angle.
+For nonzero vectors, the sign of the dot product gives this classification. If $u\cdot v>0$, then $0^\circ\leq\theta<90^\circ$: the endpoint $0^\circ$ is a zero angle, and the other cases are acute. If $u\cdot v=0$, then $\theta=90^\circ$ and the angle is right. If $u\cdot v<0$, then $90^\circ<\theta\leq180^\circ$: the endpoint $180^\circ$ is a straight angle, and the other cases are obtuse. The angle is undefined if either vector is zero.
 
 ## 3. Detailed Step-by-Step Solution
 First calculate the dot product:
