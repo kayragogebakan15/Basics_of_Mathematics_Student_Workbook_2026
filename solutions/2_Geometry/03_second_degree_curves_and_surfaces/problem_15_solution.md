@@ -77,13 +77,13 @@ The section is an ellipse in the horizontal plane $z=c$, centered on the $z$-axi
 Next, in the vertical plane $x=0$:
 
 $$
-y^2=z^2\quad\Longrightarrow\quad y=z\quad\mathrm{or}\quady=-z.
+y^2=z^2\quad\Longrightarrow\quad y=\pm z.
 $$
 
 In the vertical plane $y=0$:
 
 $$
-4x^2=z^2\quad\Longrightarrow\quad z=2x\quad\mathrm{or}\quadz=-2x.
+4x^2=z^2\quad\Longrightarrow\quad z=\pm2x.
 $$
 
 Both vertical sections are pairs of crossing straight lines through the origin, but the slopes differ because the $x$ direction is compressed by a factor of $2$ in horizontal slices. The horizontal ellipses expand in proportion to $|z|$ both above and below $z=0$.
