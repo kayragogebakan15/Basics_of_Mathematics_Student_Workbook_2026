@@ -12,13 +12,13 @@ For a horizontal section, $x^2+y^2=R^2$ is a circle with radius $R$. A double co
 At $z=c$, we obtain $x^2+y^2=c^2$, a circle of radius $R=|c|$ for $c\ne0$; at $c=0$, the cross-section is the single point $(0,0,0)$. At $x=0$:
 
 $$
-y^2=z^2\quad\Longrightarrow\quad y=z\quad\mathrm{or}\quady=-z.
+y^2=z^2\quad\Longrightarrow\quad y=\pm z.
 $$
 
 These are two crossing straight lines in the plane $x=0$. At $y=0$:
 
 $$
-x^2=z^2\quad\Longrightarrow\quad x=z\quad\mathrm{or}\quadx=-z.
+x^2=z^2\quad\Longrightarrow\quad x=\pm z.
 $$
 
 Again, two crossing straight lines. Rotating this pair of lines about the $z$-axis generates two nappes meeting at the origin: a double circular cone.
@@ -28,13 +28,13 @@ Again, two crossing straight lines. Rotating this pair of lines about the $z$-ax
 At any $z=c$, the section remains $x^2+y^2=4$, a circle of radius $2$. At $x=0$:
 
 $$
-y^2=4\quad\Longrightarrow\quad y=2\quad\mathrm{or}\quady=-2.
+y^2=4\quad\Longrightarrow\quad y=\pm2.
 $$
 
 These are two parallel vertical lines in the $yz$-plane. At $y=0$:
 
 $$
-x^2=4\quad\Longrightarrow\quad x=2\quad\mathrm{or}\quadx=-2.
+x^2=4\quad\Longrightarrow\quad x=\pm2.
 $$
 
 These are two parallel vertical lines in the $xz$-plane. Thus the surface is an infinite circular cylinder of radius $2$ around the $z$-axis.
