@@ -24,22 +24,20 @@ The left-hand and right-hand behaviors disagree. Thus no two-sided limit exists,
 Qualitative sketches of the two branches (not to scale). The dotted vertical line represents the asymptote $x=2$. Each branch slopes **downward as $x$ increases**.
 
 ~~~text
-       Left of x=2                 Right of x=2
+Left branch (x < 2)              Right branch (x > 2)
 
-     y                                  y
-     ^                                  ^
------+--------:----> x                 |   : *-------- 
-     |   ____ :                     ---+---:--\--------> x
-     |  /     :                        |   :   \
-     | /      :                        |   :    \___
-     |/       :                        |
-     |     \  :                        |
-     |      \ :                        |
-     |       \:                        |
-             x=2                           x=2
+       y                                 y
+       ^                                 ^
+       |          : x=2                  | :\
+-------+----------:----> x               | : \
+       |  ____    :                  ----+-:--\--------> x
+       |      \   :                       :    \
+       |       \  :                       :      \____
+       |        \ :                       :
+       |         \:                       :
+                x=2                      x=2
 
-As x increases toward 2 from the left, f(x) falls toward -infinity.
-As x increases away from 2 on the right, f(x) falls from +infinity toward 0.
+Both branches slope downward when read from left to right.
 ~~~
 
 To make the direction of each branch unambiguous, compare representative values in order of increasing $x$:
