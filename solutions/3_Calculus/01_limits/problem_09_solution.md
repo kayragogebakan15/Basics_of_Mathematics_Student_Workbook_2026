@@ -21,20 +21,45 @@ $$
 
 The left-hand and right-hand behaviors disagree. Thus no two-sided limit exists, even as a common infinite limit. Both sides become unbounded near $2$, so $x=2$ is a vertical asymptote.
 
-Qualitative sketch (not to scale; the dashed boundary is $x=2$):
+Qualitative sketches of the two branches (not to scale). The dotted vertical line represents the asymptote $x=2$. Each branch slopes **downward as $x$ increases**.
 
 ~~~text
-        y
-        ^         :  /
-        |         : /
-        |         :/
---------+---------:------------> x
-        |       / :
-        |      /  :
-        |     /   :
-                  x=2
-Left branch falls without bound; right branch rises without bound.
+       Left of x=2                 Right of x=2
+
+     y                                  y
+     ^                                  ^
+-----+--------:----> x                 |   : *-------- 
+     |   ____ :                     ---+---:--\--------> x
+     |  /     :                        |   :   \
+     | /      :                        |   :    \___
+     |/       :                        |
+     |     \  :                        |
+     |      \ :                        |
+     |       \:                        |
+             x=2                           x=2
+
+As x increases toward 2 from the left, f(x) falls toward -infinity.
+As x increases away from 2 on the right, f(x) falls from +infinity toward 0.
 ~~~
+
+To make the direction of each branch unambiguous, compare representative values in order of increasing $x$:
+
+| Left branch ($x<2$) | $f(x)$ | Right branch ($x>2$) | $f(x)$ |
+|---:|---:|---:|---:|
+| $1$ | $-1$ | $2.01$ | $100$ |
+| $1.5$ | $-2$ | $2.1$ | $10$ |
+| $1.9$ | $-10$ | $2.5$ | $2$ |
+| $1.99$ | $-100$ | $3$ | $1$ |
+
+For any two numbers $x_1<x_2$ on the same side of $2$, the difference satisfies
+
+$$
+f(x_2)-f(x_1)
+=\frac1{x_2-2}-\frac1{x_1-2}
+=\frac{x_1-x_2}{(x_2-2)(x_1-2)}<0.
+$$
+
+The numerator is negative, while the denominator is positive because both factors have the same sign on either side of $2$. Thus **both branches are strictly decreasing**. The right branch approaches $+\infty$ when traced *toward* $x=2$ from the right (that is, while $x$ decreases), which does not contradict its decreasing behavior when $x$ increases.
 
 ## 4. Verification and Consistency Checks
 For $x=1.9$, $f(x)=1/(-0.1)=-10$; for $x=1.99$, $f(x)=-100$. From the right, $f(2.1)=10$ and $f(2.01)=100$. These values agree with the proven signs and unbounded behavior. The function is undefined at $2$, which is consistent with, but is not by itself proof of, the asymptote.
