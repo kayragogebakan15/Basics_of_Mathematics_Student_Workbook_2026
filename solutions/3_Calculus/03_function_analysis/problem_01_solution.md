@@ -44,16 +44,31 @@ so the three horizontal-axis intercepts are $x=1-\sqrt3$, $x=1$, and $x=1+\sqrt3
 Qualitative shape (not to scale; critical points are labeled):
 
 ~~~text
-          y
-          ^      maximum (0,2)
-          |         *
-          |       /   \
-----------+-----/------\----------/----> x
-          |               \      /
-          |                 *---*
-          |              minimum (2,-2)
-          |
+Plot window: x in [-1.8, 3.7], y in [-4, 4].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+                    |                                 **
+                    |                                 *
+                    |                                **
+                    |                                *
+                    |                                *
+                ****O****                           *
+              ***   |   ***                        **
+             **     |     ***                      *
+            **      |       ***                   **
+-----------**-------+---------**-----------------**----------
+           *        |          ***              **
+          *         |            ***           **
+         **         |              ***        **
+         *          |                *********
+        **          |                    O
+        *           |
+       **           |
+       *            |
+       *            |
 ~~~
+
+The sampled curve rises to the marked maximum O at (0,2), falls to the marked minimum O at (2,-2), then rises. Its three zeros are x=1-sqrt(3), 1, and 1+sqrt(3).
 
 The shape rises to $(0,2)$, falls to $(2,-2)$, then rises again. The schematic spacing is not a coordinate scale.
 
