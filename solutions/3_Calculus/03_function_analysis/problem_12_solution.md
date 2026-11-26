@@ -12,8 +12,9 @@ Start with $q(x)=x^2-4$, an upward-opening parabola with vertex $(0,-4)$ and zer
 $$
 f(x)=|x^2-4|=
 \begin{cases}
-x^2-4,&x\le-2\text{ or }x\ge2,\\
-4-x^2,&-2<x<2.
+x^2-4,&x<-2,\\
+4-x^2,&-2\le x\le2,\\
+x^2-4,&x>2.
 \end{cases}
 $$
 
@@ -22,8 +23,9 @@ The function is continuous everywhere. Its derivative away from $\pm2$ is
 $$
 f'(x)=
 \begin{cases}
-2x,&x<-2\text{ or }x>2,\\
--2x,&-2<x<2.
+2x,&x<-2,\\
+-2x,&-2<x<2,\\
+2x,&x>2.
 \end{cases}
 $$
 
