@@ -66,16 +66,31 @@ The second derivative changes sign at all three, so they are inflection points. 
 A schematic guide for the height and direction of the branches:
 
 ~~~text
-           y
-           ^         max (1,1/2)
-           |          *
-           |        /   \____ -> y=0+
------------+-------/--------------> x
-           |      /
-    ______/       |
-  * min(-1,-1/2)  |
-  -> y=0- at far left
+Plot window: x in [-5, 5], y in [-0.7, 0.7].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+                              |
+                              |
+                              |
+                              |   **O****
+                              |  *       *****
+                              | *            ******
+                              |**                 ***********
+                              |*                            *
+                              **
+------------------------------O------------------------------
+                             **
+*                            *|
+***********                 **|
+          ******            * |
+               *****       *  |
+                    ****O**   |
+                              |
+                              |
+                              |
 ~~~
+
+The three marked O points are the global minimum (-1,-1/2), origin (0,0), and global maximum (1,1/2). The distant tails approach the horizontal axis from below and above, respectively.
 
 The guide is qualitative; the ordered extrema, inflections, and end behavior above define the sketch precisely.
 
