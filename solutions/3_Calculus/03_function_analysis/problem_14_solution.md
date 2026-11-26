@@ -10,7 +10,7 @@ The derivative's zeros divide the real line into sign intervals. Positive deriva
 The critical numbers come from
 
 $$
-(x-1)(x+2)=0\quad\Longrightarrow\quad x=1\quad\text{or}\quad x=-2.
+(x-1)(x+2)=0\quad\Longrightarrow\quad x\in\{-2,1\}.
 $$
 
 Use signs of each factor:
