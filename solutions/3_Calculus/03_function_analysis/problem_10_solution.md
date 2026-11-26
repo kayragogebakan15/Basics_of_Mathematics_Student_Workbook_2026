@@ -32,7 +32,7 @@ $$
 Its denominator is strictly positive. The numerator is positive for $|x|<1$, zero at $x=\pm1$, and negative for $|x|>1$. Therefore $f$ decreases on $(-\infty,-1)$, increases on $(-1,1)$, and decreases on $(1,\infty)$. There is a global minimum $f(-1)=-1/2$ at $x=-1$ and a global maximum $f(1)=1/2$ at $x=1$. These are global since
 
 $$
-(x\mp1)^2\ge0\quad\Longrightarrow\quad
+(|x|-1)^2\ge0\quad\Longrightarrow\quad
 x^2+1\ge2|x|,
 $$
 
