@@ -26,15 +26,31 @@ Thus the function rises to a local maximum at $x=-2$, then falls to a local mini
 A qualitative sketch (not to scale) must rise on the far left, turn down at the left critical point, and turn up again at the right critical point:
 
 ~~~text
-         y
-         ^     peak at x=-2
-         |       *
-         |      / \
----------+-----/---\---------/------> x
-         |            \     /
-         |             \___*
-         |               minimum at x=1
+Plot window: x in [-4, 3.5], y in [-4, 5].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+                                |                     *
+                                |                    *
+                                |                    *
+              **O**             |                   *
+           ****   ****          |                  **
+          **          **        |                  *
+         **             **      |                 **
+        *                 **    |                **
+       **                  ***  |               **
+      **                     ***|              **
+-----**------------------------***------------**-------------
+     *                          |***        ***
+    *                           |   ****O****
+   **                           |
+   *                            |
+  **                            |
+  *                             |
+ **                             |
+ *                              |
 ~~~
+
+The two O marks identify g's local maximum (-2,10/3) and local minimum (1,-7/6); a possible f has this same curve translated vertically by an arbitrary constant.
 
 Now differentiate the proposed example:
 
