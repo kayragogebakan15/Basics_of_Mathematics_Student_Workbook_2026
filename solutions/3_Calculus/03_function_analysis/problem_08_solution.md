@@ -46,19 +46,31 @@ Thus the inflection points are $(\pm\sqrt{2/3},-20/9)$.
 Qualitative sketch (not to scale, symmetric about the $y$-axis):
 
 ~~~text
-    y
-    ^       (0,0)
-    |        *
-    |      /   \
-----+----/-------\-----> x
-    |   /         \
-    |  *           *
-    | /             \
-    |*               *
-    |  \           /
-    |   *---------*
-      minima at x = -sqrt(2) and +sqrt(2)
+Plot window: x in [-2.5, 2.5], y in [-5, 9].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+  *                           |                           *
+  *                           |                           *
+  *                           |                           *
+  **                          |                          **
+   *                          |                          *
+   *                          |                          *
+   **                         |                         **
+    *                         |                         *
+    *                         |                         *
+     *                        |                        *
+     *                        |                        *
+      *                       |                       *
+------**-----------------*****O*****-----------------**------
+       *              ****    |    ****              *
+       **           O**       |       **O           **
+        **        ***         |         ***        **
+         ***   ****           |           ****   ***
+           **O**              |              **O**
+                              |
 ~~~
+
+The five marked O locations are the left minimum, left inflection, central maximum, right inflection, and right minimum (in increasing x order). The W-shaped curve rises toward +infinity at both ends.
 
 To read the sketch correctly: starting from high values on the far left, the curve falls to its left minimum, rises to $(0,0)$, falls to its right minimum, and rises toward $+\infty$ on the far right. The inflection points, on the inner rising/falling portions, have height $-20/9$.
 
