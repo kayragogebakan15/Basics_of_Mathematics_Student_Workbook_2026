@@ -52,19 +52,31 @@ The concavity changes at $\ln x=3/2$, or $x=e^{3/2}$. It is concave down on $(0,
 Qualitative sketch (not to scale):
 
 ~~~text
-    y
-    ^         max (e,1/e)
-    |           *
-    |         /   \____ -> y=0+
-  0 +--------*----------------------> x
-    |       x=1
-    |      /
-    |    /
-    |  /
-    | / 
-    :/
-   x=0  vertical asymptote
+Plot window: x in [0, 8], y in [-3, 1].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+|
+|
+|
+|         **********O*************O**************************
+|       ***
++-----**O----------------------------------------------------
+|     *
+|    *
+|    *
+|   *
+|   *
+|   *
+|   *
+|  *
+|  *
+|  *
+|
+|  *
+|
 ~~~
+
+The marked O points, ordered by increasing x, are the zero (1,0), global maximum (e,1/e), and inflection (e^(3/2),3/(2e^(3/2))). The vertical | at x=0 is an excluded asymptote; the graph descends toward -infinity as x approaches it from the right and approaches y=0 from above to the right.
 
 The plot must distinguish the excluded boundary $x=0$, the crossing at $x=1$, the peak at $x=e$, the later change of concavity, and the approach to zero from above.
 
