@@ -34,17 +34,31 @@ Signs of $f'$ give decreasing behavior on $(-\infty,-2)$, increasing on $(-2,0)$
 A qualitative sketch (not to scale, symmetric about the vertical axis):
 
 ~~~text
-          y
-          ^       * (0,4)
-          |      / \
-          |     /   \
-          |    /     \
-  0 ------*---/-------\---*------> x
-        (-2,0)       (2,0)
-        /                 \
-       /                   \
- Outer branches rise to +infinity as |x| grows.
+Plot window: x in [-3.4, 3.4], y in [-1, 8].
+O = marked feature; * = sampled function curve.
++ = origin when visible; vertical | and horizontal - = axes.
+                              |
+*                             |                             *
+ *                            |                            *
+ **                           |                           **
+  *                           |                           *
+   *                          |                          *
+   **                         |                         **
+    **                        |                        **
+     *                    ****O****                    *
+      *                ***    |    ****               *
+      **            ***       |       ***            **
+       **         ***         |         ***         **
+        **       **           |           **       **
+         **    ***            |            ***    **
+          **  **              |              **  **
+           ****               |               ****
+------------O*----------------+----------------*O------------
+                              |
+                              |
 ~~~
+
+The three marked O points are corners/minima (-2,0) and (2,0) and the smooth central local maximum (0,4). Both outer branches rise away from the corners; the reflected middle arc bends downward.
 
 The two sharp joining points on the horizontal axis are the nondifferentiable corners. The middle reflected arc is an inverted parabola rising from $(-2,0)$ to $(0,4)$ and falling back to $(2,0)$; the outer arms are upward-opening parabola portions.
 
